@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./taildwind.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w-full items-center justify-center flex-col" id="back">
+        <div class="flex w-full justify-center">
+            <h2 class="mb-4 mt-[100px]">Поиск рейсов</h2>
+        </div>
+        <div class="w-full flex items-center justify-center">
+            <form action="" id="form-search" class="flex">
+                <div class="w-[120px] h-[50px] border-[3px] searchAirport">
+                    <input type="text" name="froms" id="froms" class="max-w-[100px] h-[30px]" placeholder="Откуда"
+                        list="city" autocomplete="off">
+                    <datalist id="city" class="datalistAirportFrom">
+
+                    </datalist>
+                </div>
+                <div class="w-[120px] h-[50px] border-[3px] ">
+                    <input type="text" name="where" id="where" class="max-w-[100px] h-[30px]" placeholder="Куда"
+                        list="cityWhere" autocomplete="off">
+                    <datalist id="cityWhere" class="datalistAirportWhere">
+
+                    </datalist>
+                </div>
+                <div class="w-[120px] h-[50px] border-[3px] ">
+                    <input type="date" name="departing" id="departing" class="max-w-[100px] h-[30px]"
+                        placeholder="дата вылета">
+                </div>
+                <div class="w-[120px] h-[50px] border-[3px] ">
+                    <input type="date" name="returning" id="returning" class="max-w-[100px] h-[30px]"
+                        placeholder="дата возращен">
+                </div>
+                <div class="w-[120px] h-[50px] border-[3px] ">
+                    <input type="text" name="passengers" id="passengers" class="max-w-[100px] h-[30px]"
+                        placeholder="пассаж">
+                </div>
+                <div class="w-[120px] h-[50px] border-[3px] flex justify-center items-center">
+                    <button onclick="replaceWindow('backPage')">Найти</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./new_js/web.js"></script>
+    <script src="/new_js/search.js"></script>
+</body>
+
+</html>
