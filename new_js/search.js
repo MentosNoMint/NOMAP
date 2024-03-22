@@ -14,7 +14,7 @@ async function inputSearch(code) {
     return resAirport.data.items;
 }
 
-//Передаю значение из input в функцию обновляя каждую букву
+//Передаю значение из input в функцию inputSearch() обновляя каждую букву
 inputElement.addEventListener('input', async () => {
     const inputValue = inputElement.value;
     const items = await inputSearch(inputValue);
@@ -26,7 +26,7 @@ inputElement.addEventListener('input', async () => {
     listAirport.innerHTML = nameAirport;
 })
 
-//Передаю значение из input2 в функцию обновляя каждую букву
+//Передаю значение из input2 в функцию inputSearch() обновляя каждую букву
 inputElement2.addEventListener('input', async () => {
     const inputValue = inputElement2.value;
     const items = await inputSearch(inputValue);
