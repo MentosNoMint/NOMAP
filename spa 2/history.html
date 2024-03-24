@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <section class="mt-5">
+        <div class="d-flex justify-content-between align-items-start">
+            <h2 class="mb-4">
+                Привет,
+                <span class="test-3-name">Имя</span>
+                <span class="test-3-last">Фамилия</span>
+                <span class="test-3-last">Отчество</span>
+            </h2>
+            <a class="btn btn-sm btn-secondary test-3-logout" href="index.html">Выйти</a>
+        </div>
+
+        <p>Кол-во бронирований: <span class="test-3-numflights">10</span> бронирований</p>
+    </section>
+
+    <section class="mt-5 favorites">
+        <h4 class="mb-4">История бронирования</h4>
+        <ul class="nav nav-tabs mt-3 mb-3">
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="profile.html" onclick="">Активные брони</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="history.html">История бронирования</a>
+            </li>
+        </ul>
+        <table class="table table-hover table-bordered">
+            <tr>
+                <th>Идентификатор машины</th>
+                <th>Марка авто</th>
+                <th>Название авто</th>
+                <th>Номер машины</th>
+                <th>Дата Бронирования</th>
+                <th>Дата Возврата</th>
+            </tr>
+            <tr>
+                <td class="test-5-fc">QWERTY</td>
+                <td>
+                    Toyota
+                </td>
+                <td class="test-5-to">
+                    Corolla
+                </td>
+                <td class="test-5-at">с234сг</td>
+                <td>
+                    <span class="test-5-dd">10-09-2020</span>
+                    at
+                    <span class="test-5-dt">09:30</span>
+                </td>
+                <td class="test-5-fp">
+                    <span class="test-5-dd">10-09-2020</span>
+                    at
+                    <span class="test-5-dt">09:30</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="test-5-fc">QWERTY</td>
+                <td>
+                    Toyota
+                </td>
+                <td class="test-5-to">
+                    Corolla
+                </td>
+                <td class="test-5-at">с234сг</td>
+                <td>
+                    <span class="test-5-dd">10-09-2020</span>
+                    at
+                    <span class="test-5-dt">09:30</span>
+                </td>
+                <td class="test-5-fp">
+                    <span class="test-5-dd">10-09-2020</span>
+                    at
+                    <span class="test-5-dt">09:30</span>
+                </td>
+            </tr>
+        </table>
+
+    </section>
+
+
+</div>
+
+
+
+</body>
+
+</html>

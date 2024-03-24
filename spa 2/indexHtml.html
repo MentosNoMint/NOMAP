@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="flex w-full justify-center flex-col mt-[25px]">
+        <div class="flex items-center justify-center">
+            <form action="" class="flex items-center justify-center" id="form-search">
+                <div class="w-[100px] h-[50px] border-[2px]">
+                    <input type="text" placeholder="Откуда" class="w-[90px] h-[40px]" id="from" name="from">
+                </div>
+                <div class="w-[100px] h-[50px] border-[2px]">
+                    <input type="text" placeholder="Куда" class="w-[90px] h-[40px]" id="to-where" name="to-where">
+                </div>
+                <div class="w-[100px] h-[50px] border-[2px]">
+                    <input type="text" placeholder="туда(дата)" class="w-[90px] h-[40px]" id="departing"
+                        name="departing">
+                </div>
+                <div class="w-[100px] h-[50px] border-[2px]">
+                    <input type="text" placeholder="обратно(дата)" class="w-[90px] h-[40px]" id="returning"
+                        name="returning">
+                </div>
+                <div class="w-[100px] h-[50px] border-[2px]">
+                    <input type="text" placeholder="Кол-во пасс" class="w-[90px] h-[40px]" id="passegers"
+                        name="passegers">
+                </div>
+                <button class="w-[100px] h-[50px] border-[2px] flex justify-center items-center cursor-pointer">
+                    <span>Отправить</span>
+                </button>
+            </form>
+        </div>
+        <div class="w-full flex justify-center flex-col items-center">
+            <h1 class="mt-[25px]">Обратные рейсы:</h1>
+            <div class="flex w-full flex-col items-center backTo">
+                <!-- <div class="w-[800px] h-[50px] border-[1px] rounded-[15px] mt-[25px] flex">
+                    <div class="flex flex-col items-center justify-center">
+                        <span class="mx-[20px]">Номер рейса:</span>
+                        <span>самолет:</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <span class="mx-[20px]">Дата отправления:</span>
+                        <span>время отправления:</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <span class="mx-[20px]">Время прибытия:</span>
+                        <span>время в полете:</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <span class="mx-[20px]">цена:</span>
+                        <button class="bg-red-300 myElement">Выбрать</button>
+                    </div>
+                </div> -->
+            </div>
+            <h2 class="mt-[200px]">Рейсы туда</h2>
+            <div class="flex w-full flex-col items-center fromTo">
+
+            </div>
+        </div>
+    </main>
+    <script src="./js/Search.js"></script>
+</body>
+
+</html>
