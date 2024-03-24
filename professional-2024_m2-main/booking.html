@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="mt-5">
+
+            <div class="d-flex justify-content-between align-items-start">
+                <h2 class="mb-4">
+                    Бронирование
+                </h2>
+                <a href="index.html" class="btn btn-sm btn-secondary test-5-bgoback">Назад</a>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-baseline mb-4">
+                <h4>Информация о заказе</h4>
+            </div>
+
+            <table class="table table-hover table-bordered">
+                <tr>
+                    <th>Идентификатор машины</th>
+                    <th>Марка авто</th>
+                    <th>Название авто</th>
+                    <th>Номер машины</th>
+                    <th>Дата Бронирования</th>
+                    <th>Дата Возврата</th>
+                    <th>Стоимость бронирования </th>
+                </tr>
+                <tr>
+                    <td class="test-5-fc">QWERTY</td>
+                    <td>
+                        Toyota
+                    </td>
+                    <td class="test-5-to">
+                        Corolla
+                    </td>
+                    <td class="test-5-at">с234сг</td>
+                    <td>
+                        <input type="date" class="form-control mr-2">
+                    </td>
+                    <td>
+                        <input type="date" class="form-control mr-2">
+                    </td>
+                    <td class="test-5-fp">8000</td>
+                </tr>
+                <tr>
+                    <td class="test-5-fc">QWERTY</td>
+                    <td>
+                        Toyota
+                    </td>
+                    <td class="test-5-to">
+                        Corolla
+                    </td>
+                    <td class="test-5-at">с234сг</td>
+                    <td>
+                        <input type="date" class="form-control mr-2">
+                    </td>
+                    <td>
+                        <input type="date" class="form-control mr-2">
+                    </td>
+                    <td class="test-5-fp">8000</td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="text-right">
+                        <b>Финальная стоимость</b>
+                    </td>
+                    <td colspan="1" class="text-right test-5-price">16000</td>
+                </tr>
+            </table>
+            <div class="mt-3">
+                <a href="branches.html" class="btn btn-success">Добавить машину</a>
+            </div>
+        </section>
+
+        <section class="mt-5 mb-5">
+            <div class="d-flex justify-content-between align-items-baseline mb-4">
+                <h4>Данные о клиенте</h4>
+            </div>
+
+            <form action="profile.html">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Имя</label>
+                            <input type="text" class="form-control test-5-name w-100">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Фамилия</label>
+                            <input type="text" class="form-control test-5-last w-100">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Отчество</label>
+                            <input type="text" class="form-control test-5-dob">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Номер телефон</label>
+                            <input type="text" class="form-control test-5-doc">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Паспортные данные</label>
+                            <input type="text" class="form-control test-5-doc">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Дата рождения</label>
+                            <input type="date" class="form-control test-5-doc">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-success mt-4 form-control test-5-book">Забронировать</button>
+            </form>
+        </section>
+
+    </div>
+
+</body>
+
+</html>

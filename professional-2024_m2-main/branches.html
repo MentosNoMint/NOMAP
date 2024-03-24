@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row vh-100">
+            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+
+                <div class="passengers">
+                    <h2>Данные о машине</h2>
+
+                    <table class="table table-bordered">
+                        <tr>
+                            <td class="test-90-name">Филиал 1</td>
+                        </tr>
+                        <tr>
+                            <td class="test-90-name">Toyota Corolla</td>
+                        </tr>
+                    </table>
+                    <a href="booking.html" class="btn test-90-bback btn-secondary">Back</a>
+                    <a href="booking.html" class="btn test-90-bconfirm btn-success">Confirm</a>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-8 d-flex justify-content-center align-items-center">
+                <div class="container w-50">
+                    <div class="mb-3">
+                        <h2>Филиал</h2>
+                        <form>
+                            <select name="branch" class="form-control">
+                                <option value="1" selected>Филиал 1</option>
+                                <option value="2">Филиал 2</option>
+                                <option value="3">Филиал 3</option>
+                                <option value="4">Филиал 4</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="mt-5">
+                        <h2>Машины в филиале</h2>
+                        <table class="table table-hover table-bordered">
+                            <tr>
+                                <th>Идентификатор машины</th>
+                                <th>Марка авто</th>
+                                <th>Название авто</th>
+                                <th>Номер машины</th>
+                            </tr>
+                            <tr class="selected">
+                                <td class="test-5-fc">QWERTY</td>
+                                <td>
+                                    Toyota
+                                </td>
+                                <td class="test-5-to">
+                                    Corolla
+                                </td>
+                                <td class="test-5-at">с234сг</td>
+                            </tr>
+                            <tr>
+                                <td class="test-5-fc">QWERTY</td>
+                                <td>
+                                    Toyota
+                                </td>
+                                <td class="test-5-to">
+                                    Corolla
+                                </td>
+                                <td class="test-5-at">с234сг</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
