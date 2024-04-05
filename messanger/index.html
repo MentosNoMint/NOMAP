@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        }
+        @layer components{
+             .wrapper{
+                @apply min-h-full w-full flex flex-col items-center
+                     }
+        }
+        @layer base{
+            *{
+                @apply m-0 p-0 box-border
+            }
+            body{
+                font-family: "Overpass";
+                background-color: #F9F9F5;
+            }
+        }
+      </style>
+    <title>Myproject</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container max-w-[1150px] w-full">
+            <header class="bg-white w-ull h-[70px] rounded-[25px] mt-[20px] flex items-center justify-between">
+                <div class="ml-[36px]">
+                    <span class="font-bold text-[36px] cursor-pointer">#чатап</span>
+
+                </div>
+                <div class="mr-[36px]">
+                    <nav>
+                        <a href="#"
+                            class="text-[15px] font-medium bg-[#FFAFAF] px-[28px] pt-[10px] pb-[7px] rounded-[25px] hover:opacity-[0.8] duration-200">Регистрация</a>
+                    </nav>
+                </div>
+            </header>
+            <main class="w-full flex flex-col">
+                <div class="w-full h-[800px] bg-white mt-[25px] rounded-[25px] flex">
+                    <div class="flex max-w-[300px] w-full flex-col items-center">
+                        <h1 class="text-[20px] font-medium mt-[15px]">сообщения</h1>
+                        <div class="h-[50px] w-[250px] rounded-[10px] bg-[#F9F9F5] mt-[15px]">
+                            <img src="" alt="">
+                        </div>
+                        <div class="h-[50px] w-[250px] rounded-[10px] bg-[#F9F9F5] mt-[20px] animate-pulse">
+
+                        </div>
+                        <div class="h-[50px] w-[250px] rounded-[10px] bg-[#F9F9F5] mt-[20px] animate-pulse">
+
+                        </div>
+                         <div class="h-[50px] w-[250px] rounded-[10px] bg-[#F9F9F5] mt-[20px] animate-pulse">
+
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
