@@ -26,7 +26,7 @@
         }
         @layer components{
              .wrapper{
-                @apply min-h-full w-full flex flex-col items-center
+                @apply min-h-full w-full flex flex-col items-center;
                      }
         }
         @layer base{
@@ -95,29 +95,88 @@
                                 </div>
                             </div>
                             <div class="flex gap-[5px] mr-[50px] cursor-pointer">
-                                <div class="w-[5px] h-[5px] rounded-[500px] bg-black"></div>
-                                <div class="w-[5px] h-[5px] rounded-[500px] bg-black"></div>
-                                <div class="w-[5px] h-[5px] rounded-[500px] bg-black"></div>
+                                <div class="w-[5px] h-[5px] rounded-[500px] bg-gray-500"></div>
+                                <div class="w-[5px] h-[5px] rounded-[500px] bg-gray-500"></div>
+                                <div class="w-[5px] h-[5px] rounded-[500px] bg-gray-500"></div>
                             </div>
                         </div>
                         <div class="h-[1px] w-full bg-gray-200"></div>
-                        <div class="w-full h-full flex">
-                            <div class="w-1/2 h-full">
-                                <div class="flex">
-                                    <div class="img-circle rounded-[500px] w-[40px] h-[40px] border-[1px] ml-[5px]">
+                        <div class="w-full h-full overflow-y-auto">
+                            <div class="you">
+                                <div class="flex items-start mt-[50px] w-full">
+                                    <div class="img-circle rounded-[500px] w-[40px] h-[40px] border-[1px] ml-[15px]">
                                         <img src="./media/1663110850_6-mykaleidoscope-ru-p-spokoinii-chelovek-vkontakte-8.jpg"
                                             alt="Photo" class="w-full h-full rounded-[50px] object-cover">
                                     </div>
-                                    <div class="bg-gray-100 rounded-[10px] max-w-[150px]">
-                                        <span>Не знаешь сколько сейчас</span>
+                                    <div class="bg-gray-100 rounded-[10px] max-w-[250px] flex items-center ml-[5px]">
+                                        <span class="px-[10px] text-[15px] py-[5px]">Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Saepe nisi ad neque ex nesciunt? Numquam
+                                            quam beatae iusto voluptatem. Accusamus vitae reprehenderit totam quam
+                                            fuga, architecto minima magni odio sunt.</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-1/2 h-full"></div>
+                            <div class="me w-full">
+                                <div class="flex items-start mt-[25px] w-full justify-end">
+                                    <div class="bg-gray-100 rounded-[10px] max-w-[250px] flex items-center mr-[5px]">
+                                        <span class="px-[10px] text-[15px] py-[5px]">Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Saepe nisi ad neque ex nesciunt? Numquam
+                                            quam beatae iusto voluptatem. Accusamus vitae reprehenderit totam quam
+                                            fuga, architecto minima magni odio sunt.</span>
+                                    </div>
+                                    <div class="img-circle rounded-[500px] w-[40px] h-[40px] border-[1px] mr-[15px]">
+                                        <img src="./media/e77beef67c4add701e512096f1849a15.jpg" alt="Photo"
+                                            class="w-full h-full rounded-[50px] object-cover">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="you">
+                                <div class="flex items-start mt-[50px] w-full">
+                                    <div class="img-circle rounded-[500px] w-[40px] h-[40px] border-[1px] ml-[15px]">
+                                        <img src="./media/1663110850_6-mykaleidoscope-ru-p-spokoinii-chelovek-vkontakte-8.jpg"
+                                            alt="Photo" class="w-full h-full rounded-[50px] object-cover">
+                                    </div>
+                                    <div class="bg-gray-100 rounded-[10px] max-w-[250px] flex items-center ml-[5px]">
+                                        <span class="px-[10px] text-[15px] py-[5px]">Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Saepe nisi ad neque ex nesciunt? Numquam
+                                            quam beatae iusto voluptatem. Accusamus vitae reprehenderit totam quam
+                                            fuga, architecto minima magni odio sunt.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="me w-full">
+                                <div class="flex items-start mt-[25px] w-full justify-end">
+                                    <div class="bg-gray-100 rounded-[10px] max-w-[250px] flex items-center mr-[5px]">
+                                        <span class="px-[10px] text-[15px] py-[5px]">Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Saepe nisi ad neque ex nesciunt? Numquam
+                                            quam beatae iusto voluptatem. Accusamus vitae reprehenderit totam quam
+                                            fuga, architecto minima magni odio sunt.</span>
+                                    </div>
+                                    <div class="img-circle rounded-[500px] w-[40px] h-[40px] border-[1px] mr-[15px]">
+                                        <img src="./media/e77beef67c4add701e512096f1849a15.jpg" alt="Photo"
+                                            class="w-full h-full rounded-[50px] object-cover">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex h-[80px] justify-center items-center">
+                            <div class="h-[50px] w-1/2 rounded-[12px] bg-[#F9F9F5]"></div>
                         </div>
                     </div>
                 </div>
             </main>
+            <footer class="flex justify-between mt-[50px] items-center mb-[10px]">
+                <div class="ml-[36px] flex">
+                    <span class="font-bold text-[20px] cursor-pointer">#</span>
+                    <span class="font-bold text-[20px] cursor-pointer ">чат</span>
+                    <span class="font-bold text-[20px] cursor-pointer text-red-400">ап</span>
+                </div>
+                <div class="flex gap-[25px] mr-[36px]">
+                    <a href="#" class="text-[15px] font-medium hover:opacity-[0.8] duration-200">Регистрация</a>
+                    <a href="#" class="text-[15px] font-medium hover:opacity-[0.8] duration-200">Диалоги</a>
+                    <a href="#" class="text-[15px] font-medium hover:opacity-[0.8] duration-200">Авторизация</a>
+                </div>
+            </footer>
         </div>
     </div>
 </body>
