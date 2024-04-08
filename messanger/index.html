@@ -13,10 +13,27 @@
     <script>
         tailwind.config = {
             theme: {
+                screens: {
+                    '2xl': { 'max': '1535px' },
+                    // => @media (max-width: 1535px) { ... }
+
+                    'xl': { 'max': '1279px' },
+                    // => @media (max-width: 1279px) { ... }
+
+                    'lg': { 'max': '1023px' },
+                    // => @media (max-width: 1023px) { ... }
+
+                    'md': { 'max': '767px' },
+                    // => @media (max-width: 767px) { ... }
+
+                    'sm': { 'max': '639px' },
+                    // => @media (max-width: 639px) { ... }
+                }
                 extend: {
                     colors: {
                         clifford: '#da373d',
                     }
+
                 }
             }
         }
@@ -66,11 +83,11 @@
                 </div>
             </header>
             <main class="w-full flex flex-col">
-                <div class="w-full max-h-[800px] bg-white mt-[25px] rounded-[25px] flex h-[85vh]">
+                <div class="w-full max-h-[800px] bg-white mt-[25px] rounded-[25px] flex h-[85vh] lg:h-[82vh]">
                     <div class="flex max-w-[300px] w-full flex-col items-center">
                         <h1 class="text-[20px] font-medium mt-[15px]">Диалоги</h1>
-                        <div
-                            class="h-[50px] w-[250px] rounded-[10px] bg-[#F9F9F5] mt-[15px] flex items-center cursor-pointer hover:bg-[#FFAFAF] duration-300 " id="active">
+                        <div class="h-[50px] w-[250px] rounded-[10px] bg-[#F9F9F5] mt-[15px] flex items-center cursor-pointer hover:bg-[#FFAFAF] duration-300 "
+                            id="active">
                             <div class="img-circle rounded-[500px] w-[40px] h-[40px] border-[1px] ml-[5px]">
                                 <img src="./media/1663110850_6-mykaleidoscope-ru-p-spokoinii-chelovek-vkontakte-8.jpg"
                                     alt="Photo" class="w-full h-full rounded-[50px] object-cover">
@@ -87,22 +104,22 @@
                             </div>
                         </div>
                         <div
-                        class="h-[50px] w-[250px] rounded-[10px] bg-[#F9F9F5] mt-[15px] flex items-center cursor-pointer hover:bg-[#FFAFAF] duration-300">
-                        <div class="img-circle rounded-[500px] w-[40px] h-[40px] border-[1px] ml-[5px]">
-                            <img src="./media/e77beef67c4add701e512096f1849a15.jpg"
-                                alt="Photo" class="w-full h-full rounded-[50px] object-cover">
-                        </div>
-                        <div class="flex flex-col ml-[15px]">
-                            <div class="flex">
-                                <span>Кирилл</span>
-                                <span class="ml-[5px]">Широков</span>
+                            class="h-[50px] w-[250px] rounded-[10px] bg-[#F9F9F5] mt-[15px] flex items-center cursor-pointer hover:bg-[#FFAFAF] duration-300">
+                            <div class="img-circle rounded-[500px] w-[40px] h-[40px] border-[1px] ml-[5px]">
+                                <img src="./media/e77beef67c4add701e512096f1849a15.jpg" alt="Photo"
+                                    class="w-full h-full rounded-[50px] object-cover">
                             </div>
-                            <div class="flex">
-                                <span>я:</span>
-                                <span class="ml-[5px] text-gray-500">хз</span>
+                            <div class="flex flex-col ml-[15px]">
+                                <div class="flex">
+                                    <span>Кирилл</span>
+                                    <span class="ml-[5px]">Широков</span>
+                                </div>
+                                <div class="flex">
+                                    <span>я:</span>
+                                    <span class="ml-[5px] text-gray-500">хз</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                     <div class="h-full w-[1px] bg-gray-200"></div>
                     <div class="flex flex-col w-full max-w-[850px]">
@@ -184,13 +201,16 @@
                         </div>
                         <div class="flex h-[80px] justify-center items-center">
                             <div class="w-[20px] cursor-pointer mr-[15px]">
-                                <img src="./media/png-transparent-computer-icons-camera-camera-cdr-text-camera-lens (1).png" alt="Send">
+                                <img src="./media/png-transparent-computer-icons-camera-camera-cdr-text-camera-lens (1).png"
+                                    alt="Send">
                             </div>
                             <div class="h-[50px] w-[75vh] rounded-[12px] bg-[#F9F9F5]">
-                                <input type="text" placeholder="Сообщение" class="text-black text-start w-full h-full bg-[#F9F9F5] pl-[15px] rounded-[12px]">
+                                <input type="text" placeholder="Сообщение"
+                                    class="text-black text-start w-full h-full bg-[#F9F9F5] pl-[15px] rounded-[12px]">
                             </div>
                             <div class="w-[25px] cursor-pointer ml-[25px]">
-                                <img src="./media/png-transparent-computer-icons-desktop-symbol-paper-plane-miscellaneous-angle-triangle (1).png" alt="Send">
+                                <img src="./media/png-transparent-computer-icons-desktop-symbol-paper-plane-miscellaneous-angle-triangle (1).png"
+                                    alt="Send">
                             </div>
                         </div>
                     </div>
