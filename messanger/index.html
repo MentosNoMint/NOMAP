@@ -28,14 +28,20 @@
              .wrapper{
                 @apply min-h-full w-full flex flex-col items-center;
                      }
+             #active{
+                background-color: #FFAFAF
+             }        
         }
         @layer base{
             *{
-                @apply m-0 p-0 box-border
+                @apply m-0 p-0 box-border;
             }
             body{
                 font-family: "Overpass";
                 background-color: #F9F9F5;
+            }
+            input{
+                all: unset;
             }
         }
       </style>
@@ -60,11 +66,11 @@
                 </div>
             </header>
             <main class="w-full flex flex-col">
-                <div class="w-full h-[800px] bg-white mt-[25px] rounded-[25px] flex">
+                <div class="w-full max-h-[800px] bg-white mt-[25px] rounded-[25px] flex h-[85vh]">
                     <div class="flex max-w-[300px] w-full flex-col items-center">
                         <h1 class="text-[20px] font-medium mt-[15px]">Диалоги</h1>
                         <div
-                            class="h-[50px] w-[250px] rounded-[10px] bg-[#F9F9F5] mt-[15px] flex items-center cursor-pointer hover:bg-[#FFAFAF] duration-300">
+                            class="h-[50px] w-[250px] rounded-[10px] bg-[#F9F9F5] mt-[15px] flex items-center cursor-pointer hover:bg-[#FFAFAF] duration-300 " id="active">
                             <div class="img-circle rounded-[500px] w-[40px] h-[40px] border-[1px] ml-[5px]">
                                 <img src="./media/1663110850_6-mykaleidoscope-ru-p-spokoinii-chelovek-vkontakte-8.jpg"
                                     alt="Photo" class="w-full h-full rounded-[50px] object-cover">
@@ -80,9 +86,26 @@
                                 </div>
                             </div>
                         </div>
+                        <div
+                        class="h-[50px] w-[250px] rounded-[10px] bg-[#F9F9F5] mt-[15px] flex items-center cursor-pointer hover:bg-[#FFAFAF] duration-300">
+                        <div class="img-circle rounded-[500px] w-[40px] h-[40px] border-[1px] ml-[5px]">
+                            <img src="./media/e77beef67c4add701e512096f1849a15.jpg"
+                                alt="Photo" class="w-full h-full rounded-[50px] object-cover">
+                        </div>
+                        <div class="flex flex-col ml-[15px]">
+                            <div class="flex">
+                                <span>Кирилл</span>
+                                <span class="ml-[5px]">Широков</span>
+                            </div>
+                            <div class="flex">
+                                <span>я:</span>
+                                <span class="ml-[5px] text-gray-500">хз</span>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                     <div class="h-full w-[1px] bg-gray-200"></div>
-                    <div class="flex flex-col w-full">
+                    <div class="flex flex-col w-full max-w-[850px]">
                         <div class="flex h-[70px] w-full items-center ml-[25px] justify-between">
                             <div class="flex">
                                 <div class="flex">
@@ -160,23 +183,19 @@
                             </div>
                         </div>
                         <div class="flex h-[80px] justify-center items-center">
-                            <div class="h-[50px] w-1/2 rounded-[12px] bg-[#F9F9F5]"></div>
+                            <div class="w-[20px] cursor-pointer mr-[15px]">
+                                <img src="./media/png-transparent-computer-icons-camera-camera-cdr-text-camera-lens (1).png" alt="Send">
+                            </div>
+                            <div class="h-[50px] w-[75vh] rounded-[12px] bg-[#F9F9F5]">
+                                <input type="text" placeholder="Сообщение" class="text-black text-start w-full h-full bg-[#F9F9F5] pl-[15px] rounded-[12px]">
+                            </div>
+                            <div class="w-[25px] cursor-pointer ml-[25px]">
+                                <img src="./media/png-transparent-computer-icons-desktop-symbol-paper-plane-miscellaneous-angle-triangle (1).png" alt="Send">
+                            </div>
                         </div>
                     </div>
                 </div>
             </main>
-            <footer class="flex justify-between mt-[50px] items-center mb-[10px]">
-                <div class="ml-[36px] flex">
-                    <span class="font-bold text-[20px] cursor-pointer">#</span>
-                    <span class="font-bold text-[20px] cursor-pointer ">чат</span>
-                    <span class="font-bold text-[20px] cursor-pointer text-red-400">ап</span>
-                </div>
-                <div class="flex gap-[25px] mr-[36px]">
-                    <a href="#" class="text-[15px] font-medium hover:opacity-[0.8] duration-200">Регистрация</a>
-                    <a href="#" class="text-[15px] font-medium hover:opacity-[0.8] duration-200">Диалоги</a>
-                    <a href="#" class="text-[15px] font-medium hover:opacity-[0.8] duration-200">Авторизация</a>
-                </div>
-            </footer>
         </div>
     </div>
 </body>
